@@ -1,38 +1,29 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: Jacob Kustra
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 10/31/2023
  * File Name: Main.java
- * Description: Write a description for this class
+ * Description: The Main.java class contains the main method, which is
+ * used to start/run an example of the program.
  */
 
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.assign3.generator.EmailGenerator;
 
 /**
- * This is the Main class.
+ * This is the Main class which when run will initiate the customer
+ * email generator program.
  */
 public class Main {
 
   /**
-   * A main method to run examples.
-   * You may use this method for development purposes as you start building your
-   * assignments/final project.  This could prove convenient to test as you are developing.
-   * However, please note that every assignment/final projects requires JUnit tests.
+   * The main method is used to start the program, which takes user
+   * inputs to run through the various types of customer types that
+   * can each be selected.
    */
   public static void main(String[] args) {
-    System.out.println("This is a test message from the Main class (Main.java file)");
+    EmailGenerator gen = new EmailGenerator();
+    gen.sendEmail();
   }
-
-  /**
-   * This method performs XYZ and returns String.
-   *
-   * @return String
-   */
-  private String doIt() {
-    Person student = new Person("John", "Doe");
-    return student.getLastName() + ',' + student.getFirstName();
-  }
-
 }
